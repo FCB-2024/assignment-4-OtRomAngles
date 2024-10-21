@@ -1,5 +1,8 @@
 def main() :
-	number1 = int(input(""))
+	try:
+		number1 = int(input(""))
+	except EOFError:	
+		number1 = 0
 	i = 1
 	sum1 = 0
 	sum2 = 0

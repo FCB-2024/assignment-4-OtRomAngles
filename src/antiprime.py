@@ -1,22 +1,14 @@
 def main() :
-
-## ADD WHATEVER ARGUMENTS ARE NECESSARY TO THE MAIN FUNCTION
-## IN THE SAME ORDER AS THE ARGUMENTS ARE TAKEN FROM THE
-## COMMAND LINE SPECIFIED BELOW
 	number1 = int(input("Enter a positive integer number: "))
 	i = 1
 	sum1 = 0
 	sum2 = 0
 	y = number1 - 1
-	e = 0
+	f = 0
 	x = number1
-
-	## YOU CODE SHOULD START HERE AST THE SAME
-	## IDENTATION AS THIS COMMENT
-
-	while i <= x :
+	while i <= x:
 		if x % i == 0 :
-			sum1 = sum1 + 1 
+			sum1 = sum1 + 1
 		i = i + 1
 	while y > 0 :
 		i = 1
@@ -26,25 +18,21 @@ def main() :
 				sum2 = sum2 + 1
 			i = i + 1
 		if sum2 >= sum1 :
-			e = 1
+			f = 1
 		y = y - 1
-	## THE LAST LINES OF YOUR CODE SHOULD EITHER
-	## RETURN THE VALUE "anti-prime" or "not anti-prime"
-	## REPLACE THE FOLLOWING LINE BY WHATEVER LINES
-	## OF CODE ALLOW THIS FUNCTION TO RETURN THE VALUE
-	## "anti-prime" or "not anti-prime"
 
-## DO NOT REMOVE THIS LINE BELOW
-	if e == 1 :
+	if f == 1:
+		return "Not Anti-prime"
+	else:
+		return "Anti-prime"
+
+## DO NOT REMOVE THIS LINE BELOW:
+if __name__ == "__main__":
+	result = main()
+	print(result)
 
 	## MODIFY THE LINE BELOW AND ADD BEFORE WHATEVER LINES ARE NECESSARY
 	## TO RUN THIS PROGRAM AS, FOR INSTANCE:
 	## $ python antiprime.py 6
 	## WHERE THE FIRST ARGUMENT IS A POSITIVE INTEGER NUMBER FOR WHICH
-	## YOU WANT TO FIGURE OUT WHETHER IS ANTI-PRIME OR NO
-
-		print("Not Anti-prime")
-	else :
-		print("Anti-prime")
-if __name__ == "__main__" :
-	main()
+	## YOU WANT TO FIGURE OUT WHETHER IS ANTI-PRIME OR NOT

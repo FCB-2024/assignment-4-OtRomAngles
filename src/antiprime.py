@@ -1,6 +1,6 @@
 def main() :
 	try:
-		number1 = int(input("Enter a positive integer number: "))
+		number1 = int(input(""))
 	except EOFError:
 		number1 = 0
 

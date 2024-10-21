@@ -3,12 +3,13 @@ def main() :
 ## ADD WHATEVER ARGUMENTS ARE NECESSARY TO THE MAIN FUNCTION
 ## IN THE SAME ORDER AS THE ARGUMENTS ARE TAKEN FROM THE
 ## COMMAND LINE SPECIFIED BELOW
-	x = int(input("Enter a positive integer number: "))
+	number1 = int(input("Enter a positive integer number: "))
 	i = 1
 	sum1 = 0
 	sum2 = 0
-	y = x - 1
+	y = number1 - 1
 	e = 0
+	x = number1
 
 	## YOU CODE SHOULD START HERE AST THE SAME
 	## IDENTATION AS THIS COMMENT

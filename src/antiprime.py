@@ -26,9 +26,9 @@ def main() :
 		y = y - 1
 
 	if f == 1:
-		return "not anti-prime"
+		return("not anti-prime")
 	else:
-		return "anti-prime"
+		return("anti-prime")
 
 ## DO NOT REMOVE THIS LINE BELOW:
 if __name__ == "__main__":

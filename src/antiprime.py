@@ -2,7 +2,7 @@ def main() :
 	try:
 		number1 = int(input("Enter a positive integer number: "))
 	except EOFError:
-		number1 = 1
+		number1 = 0
 
 	i = 1
 	sum1 = 0

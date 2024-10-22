@@ -16,7 +16,7 @@ def main() :
 				return("not anti-prime")
 		return("anti-prime")
 	num = int(sys.argv[1])
-	result = antiprimecalc(num)
+	result = antiprime(num)
 	return result
 ## DO NOT REMOVE THIS LINE BELOW:
 if __name__ == "__main__":

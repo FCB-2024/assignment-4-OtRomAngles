@@ -1,41 +1,30 @@
 import sys
 def main() :
-	number1 = int(input(""))
-	i = 1
-	sum1 = 0
-	sum2 = 0
-	y = number1 - 1
-	f = 0
-	x = number1
-	
-	if number1 <= 0:
-		print("enter a positive integer number")
-	else :
-		while i <= x:
-			if x % i == 0 :
-				sum1 = sum1 + 1
-			i = i + 1
-		while y > 0 :
-			i = 1
-			sum2 = 0
-			while i <= y :
-				if y % i == 0 :
-					sum2 = sum2 + 1
-				i = i + 1
-			if sum2 >= sum1 :
-				f = 1
-			y = y - 1
+	num = int(input(""))
+	def antiprime(num) :
+		sum1 = 0 
+		sum2 = 0
 
-		if f == 1:
-			return("not anti-prime")
-		else:
-			return("anti-prime")
-	
-		num = int(sys.argv[1])
-		result = antiprimecalc(num)
-		return result
+		for i in range(1,num+1):
+			if num % i == 0:
+				sum1 = sum1 + 1
+		for i in range(1,num+1):
+			sum2 = 0
+			for y in range(1,i+1):
+				if i % y == 0 :
+					sum2 = sum2 + 1
+			if sum2 >= sum1 :
+				return("not anti-prime")
+		return("anti-prime")
+
+	num = int(sys.argv[1])
+	result = antiprimecalc(num)
+	return result
+
+
 ## DO NOT REMOVE THIS LINE BELOW:
 if __name__ == "__main__":
+
 	print(main())
 	## MODIFY THE LINE BELOW AND ADD BEFORE WHATEVER LINES ARE NECESSARY
 	## TO RUN THIS PROGRAM AS, FOR INSTANCE:

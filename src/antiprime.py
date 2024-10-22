@@ -1,4 +1,4 @@
-def main() :
+def main(number1) :
 	number1 = int(input(""))
 	i = 1
 	sum1 = 0
@@ -28,7 +28,8 @@ def main() :
 
 ## DO NOT REMOVE THIS LINE BELOW:
 if __name__ == "__main__":
-	print(main())
+	number1 = 0
+	print(main(number1))
 
 	## MODIFY THE LINE BELOW AND ADD BEFORE WHATEVER LINES ARE NECESSARY
 	## TO RUN THIS PROGRAM AS, FOR INSTANCE:

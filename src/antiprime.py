@@ -1,8 +1,5 @@
 def main() :
-	try:
-		number1 = int(input(""))
-	except EOFError:	
-		number1 = 0
+	number1 = int(input(""))
 	i = 1
 	sum1 = 0
 	sum2 = 0
@@ -31,8 +28,7 @@ def main() :
 
 ## DO NOT REMOVE THIS LINE BELOW:
 if __name__ == "__main__":
-	result = main()
-	print(result)
+	print(main())
 
 	## MODIFY THE LINE BELOW AND ADD BEFORE WHATEVER LINES ARE NECESSARY
 	## TO RUN THIS PROGRAM AS, FOR INSTANCE:

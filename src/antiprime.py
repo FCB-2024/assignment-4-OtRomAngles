@@ -1,6 +1,5 @@
 import sys
 def main() :
-	num = int(input(""))
 	def antiprime(num) :
 		sum1 = 0 
 		sum2 = 0
@@ -16,12 +15,9 @@ def main() :
 			if sum2 >= sum1 :
 				return("not anti-prime")
 		return("anti-prime")
-
 	num = int(sys.argv[1])
 	result = antiprimecalc(num)
 	return result
-
-
 ## DO NOT REMOVE THIS LINE BELOW:
 if __name__ == "__main__":
 
